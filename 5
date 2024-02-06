@@ -1,0 +1,37 @@
+#include<stdio.h>
+
+struct process
+
+{
+
+int all[6],max[6],need[6],finished,request[6];
+
+}p[10];
+
+int avail[6],sseq[10],ss=0,check1=0,check2=0,n,pid,nor,nori,work[6];
+
+int main()
+
+{
+
+int safeseq(void);
+
+int ch,k,i=0,j=0,pid,ch1;
+
+int violationcheck=0,waitcheck=0;
+
+do
+
+{
+
+printf("\n1.Input\n2.New Request\n3.Safe State or Not\n4.Print\n5.Exit\nEnter your 
+
+choice:");
+
+scanf("%d",&ch);
+
+switch(ch)
+
+{
+
+case 1: printf("\nEnter the number of processes:");
